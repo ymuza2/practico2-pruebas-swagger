@@ -2,6 +2,9 @@ const express = require('express');
 const app = express(); 
 const morgan = require('morgan');
 const router = require('./routes/routes.index');
+const swaggerUi = require('swagger-ui-express');
+
+import{swaggerDocument} from "./swagger";
 
 app.set('port', 3000);
 
